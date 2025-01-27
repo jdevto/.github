@@ -1,0 +1,11 @@
+name: commit-message-conformance
+on:
+  pull_request: {}
+permissions:
+  statuses: write
+  checks: write
+  contents: read
+  pull-requests: read
+jobs:
+  commitmsg-conform:
+    uses: jdevto/actions/.github/workflows/commitmsg-conform.yml@main
